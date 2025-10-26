@@ -15,7 +15,6 @@ import "./App.css";
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen w-full overflow-x-hidden bg-[#181818] text-white">
 
         {/* Navbar Section */}
         <Navbar />
@@ -36,7 +35,7 @@ const App = () => {
 
         {/* Footer Section */}
         <Footer />
-      </div>
+    
     </Router>
   );
 };

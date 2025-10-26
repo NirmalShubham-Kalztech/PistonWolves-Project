@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#16161a] text-gray-400 py-12 px-12 mt-12 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+    <footer className="bg-black text-gray-400 py-12 px-6 shadow-xl shadow-gray-600  w-full">
       {/* Main Footer Content */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
         
         {/* Brand Section */}
         <div>
@@ -36,12 +36,8 @@ const Footer = () => {
           <p className="text-sm">+91 98765 43210</p>
         </div>
       </div>
-
-    
     </footer>
   );
 };
 
 export default Footer;
-
-
