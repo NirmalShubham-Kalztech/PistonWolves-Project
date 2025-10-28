@@ -30,7 +30,7 @@ const Contact = () => (
 			style={{ backgroundImage: `url(/assets/img/contact-hero.jpg)` }}
 		>
 			{/* Overlay for darkening the background image */}
-			<div className="absolute inset-0 bg-black bg-opacity-70"></div>
+			{/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
 			{/* Hero content */}
 			<div className="relative z-10 flex flex-col items-center w-full px-3 py-4">
 				{/* Page Title */}

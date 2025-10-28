@@ -1,8 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const footerLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
-    <footer className="bg-black text-gray-400 py-12 px-6 shadow-xl shadow-gray-600  w-full">
+    <footer className="bg-black text-gray-400 py-12 px-6 w-full border-t border-gray-800">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center sm:text-left">
         
@@ -14,12 +22,18 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-white font-semibold mb-2 text-base">Quick Links</h4>
-          <ul className="text-sm space-y-1">
-            <li className="hover:text-red-500 cursor-pointer transition">Home</li>
-            <li className="hover:text-red-500 cursor-pointer transition">About</li>
-            <li className="hover:text-red-500 cursor-pointer transition">Services</li>
-            <li className="hover:text-red-500 cursor-pointer transition">Contact</li>
+          <h4 className="text-white font-semibold mb-4 text-base">Quick Links</h4>
+          <ul className="text-sm flex flex-col items-center sm:items-start gap-2">
+            {footerLinks.map((link, index) => (
+              <li key={index}>
+                <Link
+                  to={link.path}
+                  className="hover:text-red-500 transition duration-300 cursor-pointer"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 

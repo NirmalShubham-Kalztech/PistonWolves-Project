@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+/* 🌑 Global Reset and White Strip Fix */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    background-color: #000; /* Website background */
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+}

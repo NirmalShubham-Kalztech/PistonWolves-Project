@@ -11,6 +11,7 @@ import Team from "./pages/Team.jsx";
 import Contact from "./pages/Contact.jsx";
 import Event from "./pages/Event.jsx";
 import "./App.css";
+import "./index.css"; 
 
 const App = () => {
   return (
@@ -20,18 +21,19 @@ const App = () => {
         <Navbar />
 
         {/* Main Page Content */}
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/event" element={<Event />} />
-          </Routes>
-        </main>
+        <main className="flex-grow min-h-screen bg-black">
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/services" element={<Services />} />
+    <Route path="/project" element={<Project />} />
+    <Route path="/product" element={<Product />} />
+    <Route path="/team" element={<Team />} />
+    <Route path="/contact" element={<Contact />} />
+    <Route path="/event" element={<Event />} />
+  </Routes>
+</main>
+
 
         {/* Footer Section */}
         <Footer />
