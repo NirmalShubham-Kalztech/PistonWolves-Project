@@ -11,6 +11,7 @@ import project9 from "../assets/img/project/project9.png";
 import project10 from "../assets/img/project/project10.png";
 import project11 from "../assets/img/project/project11.png";
 import project12 from "../assets/img/project/project12.png";
+import Projects from  "../assets/img/project/ProjectsHero.png";
 
 const projects = [
   {
@@ -54,20 +55,24 @@ const projects = [
 const Project = () => (
   <div className="bg-[#181818] min-h-screen text-white">
     {/* Hero Section */}
-    <section
-      className="h-[250px] md:h-[320px] flex flex-col justify-center items-center bg-cover bg-center relative"
-      style={{ backgroundImage: `url(/assets/img/project-hero.jpg)` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-      <div className="relative z-10 flex flex-col items-center px-4 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
-          Our <span className="text-red-500">Projects</span>
-        </h1>
-        <p className="text-gray-300 text-sm sm:text-base max-w-2xl">
-          Explore our latest builds, customizations, and restorations. Each project is a testament to our passion and expertise.
-        </p>
-      </div>
-    </section>
+  <section
+  className="h-[80vh] md:h-screen flex flex-col justify-center items-center bg-cover bg-center relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
+  style={{ backgroundImage: `url(${Projects})` }}
+>
+  {/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
+
+  <div className="relative z-10 max-w-3xl px-2 sm:px-4 text-center">
+    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-3 leading-snug">
+      Our <span className="text-red-500">Projects</span>
+    </h1>
+    <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed px-2 sm:px-4">
+      Explore our latest builds, customizations, and restorations. Each project
+      is a true reflection of our passion, innovation, and craftsmanship that
+      define the PistonWolves experience.
+    </p>
+  </div>
+</section>
+
 
     {/* Projects List */}
     <section className="py-10 px-4 sm:px-6 md:px-8 max-w-6xl mx-auto">

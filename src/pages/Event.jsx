@@ -5,6 +5,7 @@ import EventImg3 from "../assets/img/Event/Event3.png";
 import EventImg4 from "../assets/img/Event/Event4.png";
 import EventImg5 from "../assets/img/Event/Event5.png";
 import EventImg6 from "../assets/img/Event/Event6.png";
+import EventHero from "../assets/img/Event/EventsHero.png";
 
 const eventCategories = [
   "All",
@@ -83,20 +84,25 @@ const Event = () => {
   return (
     <div className="bg-[#181818] min-h-screen text-white">
       {/* Hero */}
-      <section
-        className="h-[180px] sm:h-[300px] flex flex-col justify-center items-center bg-cover bg-center relative"
-        style={{ backgroundImage: `url(/assets/img/event-hero.jpg)` }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div className="relative z-10 flex flex-col items-center w-full px-3 py-4">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-2">
-            Automotive <span className="text-red-500">Events</span>
-          </h1>
-          <p className="text-gray-300 text-center max-w-md sm:max-w-2xl text-base sm:text-lg">
-            Track days, car meets, workshops, and more—find your next automotive adventure with PistonWolves.
-          </p>
-        </div>
-      </section>
+    <section
+  className="h-[80vh] md:h-screen flex flex-col justify-center items-center bg-cover bg-center relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
+  style={{ backgroundImage: `url(${EventHero})` }}
+>
+  {/* Overlay */}
+  {/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
+
+  {/* Content */}
+  <div className="relative z-10 max-w-3xl px-2 sm:px-4 text-center">
+    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-3 leading-snug">
+      Automotive <span className="text-red-500">Events</span>
+    </h1>
+    <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed px-2 sm:px-4">
+      Track days, car meets, workshops, and more — find your next automotive adventure 
+      with PistonWolves and experience the thrill of performance and passion.
+    </p>
+  </div>
+</section>
+
 
       {/* Category Filter */}
       <section className="py-6 px-2 sm:px-4 max-w-4xl mx-auto">

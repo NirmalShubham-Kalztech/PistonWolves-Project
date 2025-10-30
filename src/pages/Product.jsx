@@ -6,6 +6,7 @@ import prodct3 from "../assets/img/Prodct/prodct3.png";
 import prodct4 from "../assets/img/Prodct/prodct4.png";
 import prodct5 from "../assets/img/Prodct/prodct5.png";
 import prodct6 from "../assets/img/Prodct/prodct6.png";
+import prodct7 from "../assets/img/Prodct/ProductHero.png";
 
 // Icon imports
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
@@ -65,27 +66,25 @@ const Product = () => (
   <div className="bg-[#181818] min-h-screen text-white">
     {/* ---- Hero Section ---- */}
     <section
-      className="relative h-[220px] sm:h-[280px] flex flex-col justify-center items-center text-center"
-      style={{
-        backgroundImage: `url(${prodct6})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-      <div className="relative z-10 px-4">
-        <h1 className="text-3xl sm:text-5xl font-bold mb-2">
-          Premium <span className="text-red-500">Products</span>
-        </h1>
-        <p className="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto">
-          The best in performance, reliability, and style. Shop our curated
-          selection of premium automotive parts and accessories.
-        </p>
-        <button className="mt-5 bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded font-semibold text-sm sm:text-base">
-          Shop Now
-        </button>
-      </div>
-    </section>
+  className="h-[80vh] md:h-screen flex flex-col justify-center items-center bg-cover bg-center relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
+  style={{ backgroundImage: `url(${prodct7})` }}
+>
+  {/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
+
+  <div className="relative z-10 max-w-3xl px-2 sm:px-4 text-center">
+    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-3 leading-snug">
+      Premium <span className="text-red-500">Products</span>
+    </h1>
+    <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed px-2 sm:px-4">
+      The best in performance, reliability, and style. Shop our curated selection
+      of premium automotive parts and accessories that redefine quality and
+      durability.
+    </p>
+    <button className="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded font-semibold text-sm sm:text-base transition-all duration-300">
+      Shop Now
+    </button>
+  </div>
+</section>
 
     {/* ---- Stats Section ---- */}
     <section className="py-8 bg-[#222] flex flex-wrap justify-center gap-6 sm:gap-10">

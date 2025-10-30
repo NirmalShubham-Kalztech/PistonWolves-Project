@@ -4,6 +4,7 @@ import About2 from "../assets/img/About/About2.png";
 import About3 from "../assets/img/About/About3.png";
 import About4 from "../assets/img/About/About4.png";
 import About5 from "../assets/img/About/About5.png";
+import About6 from "../assets/img/About/AboutHero.png";
 import { FaTrophy, FaLightbulb, FaUsers, FaShieldAlt } from "react-icons/fa";
 
 const team = [
@@ -61,9 +62,9 @@ const About = () => (
     {/* Hero Section */}
    <section
       className="h-[80vh] md:h-screen flex flex-col justify-center items-center bg-cover bg-center relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
-                  style={{ backgroundImage: `url(${About1})` }}
+                  style={{ backgroundImage: `url(${About6})` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      {/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
       <div className="relative z-10 max-w-3xl px-2 sm:px-4">
         <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-3 leading-snug">
           About <span className="text-red-500">PistonWolves</span>

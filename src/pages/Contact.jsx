@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import Hero from "../assets/img/Contact/ContactHero.png";  
 
 // FAQ data array
 const faqs = [
@@ -26,24 +27,23 @@ const Contact = () => (
 	<div className="bg-[#181818] min-h-screen text-white">
 		{/* Hero Section */}
 		<section
-			className="relative w-full h-[220px] sm:h-[260px] flex items-center justify-center bg-cover bg-center"
-			style={{ backgroundImage: `url(/assets/img/contact-hero.jpg)` }}
-		>
-			{/* Overlay for darkening the background image */}
-			{/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
-			{/* Hero content */}
-			<div className="relative z-10 flex flex-col items-center w-full px-3 py-4">
-				{/* Page Title */}
-				<h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-2">
-					Contact <span className="text-red-500">Us</span>
-				</h1>
-				{/* Subtitle/Description */}
-				<p className="text-gray-300 text-center max-w-md sm:max-w-2xl text-base sm:text-lg">
-					Ready to start your build? Have questions about our services? We're here to help.
-					Reach out to our team of experts and let's discuss how we can turn your automotive vision to life.
-				</p>
-			</div>
-		</section>
+  className="h-[80vh] md:h-screen flex flex-col justify-center items-center bg-cover bg-center relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
+  style={{ backgroundImage: `url(${Hero})` }}
+>
+  {/* Overlay */}
+  {/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
+
+  {/* Content */}
+  <div className="relative z-10 max-w-3xl px-2 sm:px-4 text-center">
+    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-3 leading-snug">
+      Contact <span className="text-red-500">Us</span>
+    </h1>
+    <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed px-2 sm:px-4">
+      Ready to start your build? Have questions about our services? We're here to help. 
+      Reach out to our team of experts and let’s discuss how we can bring your automotive vision to life.
+    </p>
+  </div>
+</section>
 
 		{/* Main Contact Section */}
 		<section className="py-10 px-2 sm:px-4 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -150,11 +150,11 @@ const Contact = () => (
 						</div>
 					</div>
 					{/* Facility Image */}
-					<img
-						src="/assets/img/contact-building.jpg"
+					{/* <img
+						src=""
 						alt="PistonWolves Facility"
 						className="rounded-lg mt-2 w-full object-cover"
-					/>
+					/> */}
 				</div>
 			</div>
 		</section>

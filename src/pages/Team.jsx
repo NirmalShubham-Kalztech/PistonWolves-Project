@@ -5,6 +5,7 @@ import TeamImg3 from "../assets/img/Team/team3.png";
 import TeamImg4 from "../assets/img/Team/team4.png";
 import TeamImg5 from "../assets/img/Team/team5.png";
 import TeamImg6 from "../assets/img/Team/team6.png";
+import TeamHero from "../assets/img/Team/TeamHero.png";
 
 const metrics = [
   { value: "150+", label: "Successful Projects" },
@@ -85,32 +86,35 @@ const team = [
 const Team = () => (
   <div className="bg-gray-900 min-h-screen text-white">
     {/* Hero Section */}
-    <div
-      className="w-full py-16 flex flex-col items-center justify-center text-center px-4"
-      style={{
-        backgroundImage: "url('/team-hero.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-        Our <span className="text-red-500">Team</span>
-      </h1>
-      <p className="text-base sm:text-lg max-w-xl mb-8 text-gray-300">
-        Meet the talented professionals behind our success. Dedicated to delivering
-        excellence and innovation in every ride.
-      </p>
+   <section
+  className="h-[80vh] md:h-screen flex flex-col justify-center items-center bg-cover bg-center relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
+  style={{ backgroundImage: `url(${TeamHero})` }}
+>
+  {/* Overlay */}
+  {/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
 
-      {/* Metrics Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto w-full">
-        {metrics.map(({ value, label }, idx) => (
-          <div key={idx} className="flex flex-col items-center">
-            <span className="text-2xl sm:text-3xl font-bold text-red-500">{value}</span>
-            <span className="text-sm sm:text-md text-gray-200">{label}</span>
-          </div>
-        ))}
-      </div>
+  {/* Content */}
+  <div className="relative z-10 max-w-5xl px-4 text-center">
+    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-3 leading-snug">
+      Our <span className="text-red-500">Team</span>
+    </h1>
+    <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto mb-8">
+      Meet the talented professionals behind our success — dedicated to delivering
+      excellence and innovation in every ride.
+    </p>
+
+    {/* Metrics Grid */}
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto w-full">
+      {metrics.map(({ value, label }, idx) => (
+        <div key={idx} className="flex flex-col items-center">
+          <span className="text-2xl sm:text-3xl font-bold text-red-500">{value}</span>
+          <span className="text-sm sm:text-md text-gray-200">{label}</span>
+        </div>
+      ))}
     </div>
+  </div>
+</section>
+
 
     {/* Team Section */}
     <div className="max-w-6xl mx-auto py-16 px-4">

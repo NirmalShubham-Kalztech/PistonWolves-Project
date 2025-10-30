@@ -54,7 +54,7 @@ const Navbar = () => {
         {/* Right: Book Button */}
         <div className="hidden md:block">
           <Link
-            to="/book"
+            to="/contact"
             className="border border-gray-400 rounded-full px-5 py-1 text-gray-300 hover:bg-gray-700 hover:text-white transition-all duration-150 text-sm font-normal"
           >
             Book
@@ -64,7 +64,7 @@ const Navbar = () => {
         {/* Book Button for Mobile */}
         <div className={`md:hidden absolute top-full right-6 mt-2 ${isOpen ? "block" : "hidden"}`}>
           <Link
-            to="/book"
+            to="/contact"
             className="border border-gray-400 rounded-full px-5 py-1 text-gray-300 hover:bg-gray-700 hover:text-white transition-all duration-150 text-sm font-normal"
             onClick={() => setIsOpen(false)}
           >

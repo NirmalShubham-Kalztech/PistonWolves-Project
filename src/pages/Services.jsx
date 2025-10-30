@@ -1,4 +1,5 @@
 import React from "react";
+import Services1 from "../assets/img/About/ServicesHero.png";
 import {
   FaCogs,
   FaAward,
@@ -103,21 +104,24 @@ const Services = () => {
   return (
     <div className="bg-[#181818] min-h-screen text-white">
       {/* --- Hero Section --- */}
-      <section
-        className="h-[320px] sm:h-[200px] flex flex-col justify-center items-center bg-cover bg-center relative text-center px-4"
-        style={{ backgroundImage: `url(/assets/img/service-hero.jpg)` }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div className="relative z-10">
-          <h1 className="text-4xl md:text-5xl sm:text-2xl font-bold mb-2">
-            Our <span className="text-red-500">Services</span>
-          </h1>
-          <p className="text-gray-300 max-w-2xl mx-auto sm:text-xs">
-            From cutting-edge performance builds to custom finishes, we deliver
-            machines that thrill.
-          </p>
-        </div>
-      </section>
+    <section
+  className="h-[80vh] md:h-screen flex flex-col justify-center items-center bg-cover bg-center relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
+  style={{ backgroundImage: `url(${Services1})` }}
+>
+  {/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
+
+  <div className="relative z-10 max-w-3xl px-2 sm:px-4 text-center">
+    <h1 className="text-white text-2xl sm:text-3xl md:text-5xl font-bold mb-3 leading-snug">
+      Our <span className="text-red-500">Services</span>
+    </h1>
+    <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed px-2 sm:px-4">
+      From cutting-edge performance builds to custom finishes, we deliver
+      machines that thrill. Every project reflects our passion for innovation,
+      precision, and design excellence.
+    </p>
+  </div>
+</section>
+
 
       {/* --- Call to Action --- */}
       <section className="py-10 sm:py-6 px-4 text-center">

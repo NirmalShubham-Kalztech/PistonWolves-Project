@@ -65,7 +65,7 @@ const Home = () => {
         className="h-[80vh] md:h-screen flex flex-col justify-center items-center bg-cover bg-center relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"
             style={{ backgroundImage: `url(${HomeImg})` }}
       >
-        <div className="absolute inset-0 bg-black/70"></div>
+        {/* <div className="absolute inset-0 bg-black/70"></div> */}
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Transform Your <span className="text-red-500">Dream Ride</span>

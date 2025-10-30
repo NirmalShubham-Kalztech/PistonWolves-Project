@@ -37,17 +37,28 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Address */}
-        <div>
-          <h4 className="text-white font-semibold mb-2 text-base">Our Address</h4>
-          <p className="text-sm">123 Performance Ave, Mumbai, India</p>
-        </div>
+     {/* Address */}
+<div>
+  <h4 className="text-white font-semibold mb-2 text-base">Our Address</h4>
+  <p className="text-sm leading-relaxed">
+    PistonWolves Auto Garage <br />
+    123 Performance Avenue, Andheri (E), <br />
+    Near Metro Station, Mumbai, Maharashtra 400059 <br />
+    India
+  </p>
+ 
+
+</div>
+
 
         {/* Contact */}
         <div>
           <h4 className="text-white font-semibold mb-2 text-base">Contact</h4>
           <p className="text-sm">info@pistonwolves.com</p>
           <p className="text-sm">+91 98765 43210</p>
+            <p className="text-sm mt-2">
+    <span className="font-semibold">Working Hours:</span> Mon - Sat: 9:00 AM – 7:00 PM
+  </p>
         </div>
       </div>
     </footer>
